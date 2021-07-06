@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $mainFont;
+  width: 100vw;
+  overflow-x: hidden;
+}
+h1 {
+  text-transform: capitalize;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  &:focus,
+  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+.section-title {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 8px;
+    border-radius: 40px;
+    background-color: $primary;
+    left: 50%;
+    top: 130%;
+    transform: translate(-50%, -50%);
+  }
+}
+.accent-btn {
+  background-color: $accent;
+  font-weight: 300 !important;
+  white-space: nowrap !important;
+  border-radius: 50px;
+  color: $white;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $accent;
+    border-radius: 40px;
+    z-index: -1;
+    filter: blur(20px);
+    transform: scale(0.75);
+  }
+  &:hover {
+    background-color: lighten($color: $accent, $amount: 20%) !important;
+    transform: translateY(1px);
+    color: $white;
+    &::before {
+      filter: blur(0);
+      width: 0;
+      height: 0;
+    }
+  }
+}
+.border-btn {
+  background-color: transparent !important;
+  color: $dark !important;
+  border: 3px solid $accent;
+  font-weight: 300 !important;
+  white-space: nowrap !important;
+  border-radius: 50px;
+  color: $white;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  position: relative;
+
+  &:hover {
+    background-color: $accent !important;
+    color: $white !important;
+    &::after {
+      content: "\f061";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      color: $white;
+      padding: 0 0.3em;
+    }
+  }
+}
+
+.primary-btn {
+  font-size: 0.8em;
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  color: $light;
+  font-weight: 500;
+  transition: transform 0.1s ease;
+  cursor: pointer;
+  background-color: $primary;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+    border-radius: 40px;
+    z-index: -1;
+    filter: blur(20px);
+    transform: scale(0.75);
+  }
+
+  &:hover {
+    transform: translateY(1px);
+    background-color: lighten($color: $primary, $amount: 20%);
+    color: $light;
+    &::before {
+      filter: blur(0);
+      width: 0;
+      height: 0;
+    }
+  }
+}
+.static-btn {
+  background-color: $primary;
+  color: $light;
+  &:hover {
+    background-color: lighten($color: $primary, $amount: 20%);
+    color: $light !important;
+  }
+}
+section {
+  width: 100vw;
+  overflow: hidden;
+}

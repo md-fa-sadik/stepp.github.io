@@ -1,0 +1,33 @@
+@media (max-width: 1200px) {
+  .user-sidebar {
+    width: 60% !important;
+  }
+  .hero {
+    .main-title,
+    .main-slogan {
+      white-space: normal;
+    }
+    &-image {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  .main-slogan {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100% !important;
+      height: 40%;
+      background-color: rgba($color: $primary, $alpha: 0.7);
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 576px) {
+  .user-sidebar {
+    width: 90% !important;
+  }
+}

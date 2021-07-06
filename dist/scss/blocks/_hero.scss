@@ -1,0 +1,54 @@
+.hero {
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px;
+  color: $dark;
+  background-image: radial-gradient(57% 97% at 102% 116%, #ffc94780 39%, #073aff00 134%), radial-gradient(43% 50% at -27% -5%, #ffc9474f 39%, #073aff00 134%);
+  .main-title,
+  .main-slogan {
+    font-size: clamp(40px, 4vw, 60px);
+    white-space: nowrap;
+  }
+  .main-slogan {
+    position: relative;
+    display: inline-block;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 40%;
+      background-color: rgba($color: $primary, $alpha: 0.7);
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .hi {
+    display: inline-block;
+    width: 30px;
+    transform-origin: center bottom;
+    animation: hi 1s ease-in-out alternate infinite;
+  }
+  .description {
+    font-size: 0.8em;
+    color: $disable;
+  }
+
+  &-image {
+    display: flex;
+    justify-content: flex-end;
+    animation: updown 2s linear infinite alternate;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .social-wrapper {
+    a {
+      color: $disable;
+      font-size: 1.2em;
+      margin-right: 1.5em;
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+}

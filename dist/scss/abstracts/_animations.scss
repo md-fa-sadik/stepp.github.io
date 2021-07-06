@@ -1,0 +1,22 @@
+@keyframes hi {
+  0% {
+    transform: rotateZ(0);
+  }
+  30% {
+    transform: rotateZ(20deg);
+  }
+  60% {
+    transform: rotateZ(-20deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes updown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}

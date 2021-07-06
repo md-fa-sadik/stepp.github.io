@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--  Bootstrap bundle 5.00 -->
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./dist/css/all.min.css" />
+    <link rel="stylesheet" href="./dist/css/fontawesome.min.css" />
+    <!-- Line Awesome  -->
+    <link rel="stylesheet" href="./dist/lineAwesome/css/line-awesome.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./dist/css/swiper.min.css" />
+    <!--  Custom css -->
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <!-- start of navbar -->
+    <!-- desktop navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light main-navbar fixed-top py-2 px-2 px-md-0" id="mainNavbar">
+      <div class="container">
+        <!-- your logo here -->
+        <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="logo" class="img-fluid" /></a>
+        <button class="navbar-toggler">
+          <i class="fas fa-th"></i>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <!-- home page varients -->
+            <!-- main dropdown 1 -->
+            <li class="nav-item dropdown">
+              <!-- main dropdown 1 button -->
+              <a class="nav-link active dropdown-link" aria-current="page" href="#hero">home</a>
+              <!-- main dropdown 1 menu -->
+              <ul class="dropdown-menu">
+                <li><a href="" class="dropdown-item">Home Dark</a></li>
+              </ul>
+            </li>
+            <!-- main dropdown 1 end -->
+            <li class="nav-item">
+              <a class="nav-link" href="#features">features</a>
+            </li>
+            <!-- pages dropdown -->
+            <!-- main dropdown 2 -->
+            <li class="nav-item dropdown">
+              <!-- main dropdown 2 button -->
+              <a class="nav-link dropdown-link" href="#">pages </a>
+              <!-- main dropdown 2 menu -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <!-- sub dropdown 1 -->
+                <li class="dropdown sub-dropdown">
+                  <!-- sub dropdown 1 button -->
+                  <a class="dropdown-item sub-dropdown-link" href="#">Another action</a>
+                  <!-- sub dropdown 1 menu -->
+                  <ul class="dropdown-menu sub-dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <!-- sub dropdown 1 end -->
+                    <!-- sub dropdown 2 -->
+                    <li class="dropdown sub-dropdown">
+                      <!-- sub dropdown 2 button -->
+                      <a class="dropdown-item sub-dropdown-link" href="#">Something else here</a>
+                      <!-- sub dropdown 2 menu -->
+                      <ul class="dropdown-menu sub-dropdown-menu">
+                        <li><a href="" class="dropdown-item">item</a></li>
+                        <li><a href="" class="dropdown-item">item</a></li>
+                        <li><a href="" class="dropdown-item">item</a></li>
+                        <li><a href="" class="dropdown-item">item</a></li>
+                      </ul>
+                      <!-- sub dropdown 2 end -->
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <!-- main dropdown 2 end -->
+            <li class="nav-item">
+              <a class="nav-link" href="#services">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sec5">shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex align-center">
+            <li class="nav-item">
+              <a class="btn rounded-pill mt-2 me-4 px-3 py-2 primary-btn" href="#"> get started </a>
+            </li>
+            <!-- avatar/ user profile -->
+            <li class="nav-item">
+              <div class="navbar-avatar">
+                <!-- your avatar image here -->
+                <img src="./img/avatar.jpg" alt="" class="img-fluid" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of desktop navbar -->
+    <!-- user side bar -->
+    <div class="user-sidebar-wrapper">
+      <div class="user-sidebar-backdrop" id="userSideBackdrop">
+        <div class="user-sidebar">
+          <i class="las la-times sideBarCloseBtn"></i>
+          <div class="user pt-4">
+            <div class="user-avatar mb-3">
+              <img src="./img/avatar.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="user-details">
+              <h5 class="user-name mb-0">John Smith</h5>
+              <p class="user-bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, suscipit.</p>
+            </div>
+          </div>
+          <hr />
+          <div class="sidebar-content">
+            <ul class="main">
+              <li>
+                <a href="">
+                  <i class="las la-chalkboard"></i>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="las la-bell position-relative">
+                    <!-- nottification dot -->
+                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger rounded-circle"></span>
+                  </i>
+                  notifications
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="las la-comment-alt position-relative"> <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger rounded-circle"></span></i>
+                  massages
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="las la-chart-bar"></i>
+                  statistics
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="las la-clipboard-check"></i>
+                  tasks
+                </a>
+              </li>
+            </ul>
+            <hr />
+            <ul class="footer">
+              <li>
+                <a href="">
+                  <i class="fas fa-sign-out-alt"></i>
+                  sign out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of user side bar -->
+    <!-- mobile navigation side bar -->
+    <div class="mobile-nav">
+      <div class="mobile-nav-backdrop">
+        <div class="mobile-nav-container" id="mobileNavContainer">
+          <i class="las la-times mobileNavCloseBtn"></i>
+          <!-- avatar area -->
+          <div class="avatar-area">
+            <div class="navbar-avatar">
+              <!-- your avatar image here -->
+              <img src="./img/avatar.jpg" alt="avatar" class="img-fluid" id="avatarArea" />
+            </div>
+            <div class="avatar-details">
+              <h6 class="avatar-name">John Smith</h6>
+            </div>
+          </div>
+          <!-- menu area -->
+          <div class="menu-area">
+            <ul class="menu">
+              <li class="menu-item"><a href="#hero" class="menu-link">home</a></li>
+              <li class="menu-item"><a href="#features" class="menu-link">features</a></li>
+              <li class="menu-item"><a href="#services" class="menu-link">services</a></li>
+              <!-- pages accordion -->
+              <li class="menu-item accordion">
+                <!-- pages accordion button -->
+                <a href="" class="menu-link accordion-link" data-bs-toggle="collapse" data-bs-target="#pages">pages</a>
+                <!-- pages accordion content -->
+                <div id="pages" class="accordion-collapse collapse">
+                  <ul class="accordion-body">
+                    <!-- blog pages accordion -->
+                    <li class="menu-item accordion">
+                      <a href="" class="menu-link accordion-link" data-bs-toggle="collapse" data-bs-target="#blogs">blog</a>
+                      <!-- blog pages accordion content -->
+                      <div class="accordion-collapse collapse" id="blogs">
+                        <ul class="accordion-body">
+                          <li class="menu-item"><a href="" class="menu-link">Blog I</a></li>
+                          <li class="menu-item"><a href="" class="menu-link">Blog II</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <!-- blog pages accordion end -->
+                    <li class="menu-item"><a href="" class="menu-link">shop</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">contact</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- pages accordion end -->
+              <li class="menu-item"><a href="" class="menu-link">blog</a></li>
+              <li class="menu-item"><a href="" class="menu-link">shop</a></li>
+              <li class="menu-item"><a href="" class="menu-link">contact</a></li>
+            </ul>
+          </div>
+          <!-- mobile menu social media  -->
+          <div class="social-wrapper">
+            <a href="" class="facebook">
+              <i class="lab la-facebook-f"></i>
+            </a>
+            <a href="" class="github">
+              <i class="lab la-github"></i>
+            </a>
+            <a href="" class="dribbble">
+              <i class="lab la-dribbble"></i>
+            </a>
+            <a href="" class="twitter">
+              <i class="lab la-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of mobile navigation side bar -->
+    <!-- start of hero section -->
+    <section class="container-fluid hero" id="hero">
+      <div class="ball ball1"></div>
+      <div class="ball ball2"></div>
+      <div class="ball ball3"></div>
+      <div class="ball ball4"></div>
+      <div class="ball ball5"></div>
+      <div class="ball ball6"></div>
+      <div class="ball ball7"></div>
+      <div class="ball ball8"></div>
+      <div class="container py-5 mt-0 mt-md-5">
+        <div class="row w-100 h-100 my-5 m-md-0">
+          <div class="col-lg-6 hero-content d-flex flex-column justify-content-center text-center text-xl-start">
+            <!-- starting description here -->
+            <p class="description starting-desc m-0 d-none d-xl-block">
+              <span class="hi">
+                <img src="./img/hand.png" class="img-fluid" alt="hello" />
+              </span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, maxime.
+            </p>
+            <h1 class="main-title m-0">Let's learn something <br />New with us</h1>
+            <h1 class="main-slogan m-0">Main Slogan</h1>
+            <p class="description last-desc my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel pariatur tempore eaque sapiente amet unde, quod qui, dolores ea recusandae temporibus earum, odit neque modi. Assumenda, id ullam, tempore asperiores, magni incidunt velit ut maxime labore corrupti beatae dignissimos ipsa?</p>
+            <div class="button-wrapepr d-flex my-4">
+              <a href="" class="btn accent-btn bg-danger me-2">contact us</a>
+              <a href="" class="btn border-btn bg-danger">leran more</a>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-image m-0 p-0">
+            <!--🔴🔴🔴 your hero image here -->
+            <img src="./img/hero.png" alt="hero image" class="img-fluid w-100" />
+          </div>
+        </div>
+        <div class="social-wrapper d-none d-lg-block">
+          <a href="" class="facebook">
+            <i class="lab la-facebook-f"></i>
+          </a>
+          <a href="" class="github">
+            <i class="lab la-github"></i>
+          </a>
+          <a href="" class="dribbble">
+            <i class="lab la-dribbble"></i>
+          </a>
+          <a href="" class="twitter">
+            <i class="lab la-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end of hero ection -->
+    <!-- start of feature -->
+    <section class="container-fluid my-5 feature" id="features">
+      <h1 class="mb-1 text-center section-title">our features</h1>
+      <p class="my-5 text-center fw-light p-4 p-md-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, possimus.</p>
+      <div class="container my-5">
+        <!-- feature 1 -->
+        <div class="row g-0 justify-content-center">
+          <!-- feature 1 image -->
+          <div class="col-xl-2 feature-image me-0 me-xl-3 my-3 my-xl-0">
+            <img src="./img/feature/1.jpg" alt="" class="img-fluid rounded-3 w-100" />
+          </div>
+          <!-- feature 1 content -->
+          <div class="col-xl-9 rounded-3 p-4 feature-content">
+            <h4 class="mb-3 fw-light">the catalizer</h4>
+            <h6>john doe</h6>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in exercitationem nisi autem harum voluptate!</p>
+            <a href="" class="mt-auto">learn more</a>
+          </div>
+        </div>
+        <!-- feature 2 -->
+        <div class="row g-0 justify-content-center">
+          <!-- feature 2 content -->
+          <div class="col-xl-9 rounded-3 p-4 feature-content">
+            <h4 class="mb-3 fw-light">the catalizer</h4>
+            <h6>john doe</h6>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in exercitationem nisi autem harum voluptate!</p>
+            <a href="" class="mt-auto">learn more</a>
+          </div>
+          <!-- feature 2 image -->
+          <div class="col-xl-2 feature-image ms-0 ms-xl-3 my-3 my-xl-0">
+            <img src="./img/feature/2.jpg" alt="" class="img-fluid rounded-3 w-100" />
+          </div>
+        </div>
+        <!-- feature 3 -->
+        <div class="row g-0 justify-content-center">
+          <!-- feature 3 image -->
+          <div class="col-xl-2 feature-image me-0 me-xl-3 my-3 my-xl-0">
+            <img src="./img/feature/3.jpg" alt="" class="img-fluid rounded-3 w-100" />
+          </div>
+          <!-- feature 3 content -->
+          <div class="col-xl-9 rounded-3 p-4 feature-content">
+            <h4 class="mb-3 fw-light">the catalizer</h4>
+            <h6>john doe</h6>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in exercitationem nisi autem harum voluptate!</p>
+            <a href="" class="mt-auto">learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of feature -->
+    <!-- start of card gallery -->
+    <section class="container-fluid cards" id="services">
+      <h1 class="mb-1 text-center section-title">services we provide</h1>
+      <p class="my-5 text-center fw-light p-4 p-md-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, possimus.</p>
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <!-- card icon here -->
+          <div class="col-xl d-flex flex-column justify-content-center align-items-center p-4 mx-2 mb-3 mb-xl-0">
+            <i class="las la-drafting-compass fs-1 p-3"></i>
+            <h5 class="service-title text-capitalize my-3">modern design</h5>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente unde, deleniti quos quaerat accusantium vitae!</p>
+          </div>
+          <div class="col-xl d-flex flex-column justify-content-center align-items-center p-4 mx-2 mb-3 mb-xl-0">
+            <!-- card icon here -->
+            <i class="las la-headset fs-1 p-3"></i>
+            <h5 class="service-title text-capitalize my-3">24/7 support</h5>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente unde, deleniti quos quaerat accusantium vitae!</p>
+          </div>
+          <div class="col-xl d-flex flex-column justify-content-center align-items-center p-4 mx-2 mb-3 mb-xl-0">
+            <!-- card icon here -->
+            <i class="las la-layer-group fs-1 p-3"></i>
+            <h5 class="service-title text-capitalize my-3">Structured files</h5>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente unde, deleniti quos quaerat accusantium vitae!</p>
+          </div>
+          <div class="col-xl d-flex flex-column justify-content-center align-items-center p-4 mx-2 mb-3 mb-xl-0">
+            <!-- card icon here -->
+            <i class="las la-laptop-code fs-1 p-3"></i>
+            <h5 class="service-title text-capitalize my-3">Clean code</h5>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente unde, deleniti quos quaerat accusantium vitae!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of card gallery -->
+    <!-- bootstrap 5.0 -->
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
+    <!-- gsap 3.7.0 -->
+    <script src="./dist/js/gsap.min.js"></script>
+    <!-- gsap scrollTrigger -->
+    <script src="./dist/js/scrollTrigger.min.js"></script>
+    <!-- swiper js -->
+    <script src="./dist/js/swiper.min.js"></script>
+    <!-- custom scripts -->
+    <script src="./dist/js/app.js"></script>
+  </body>
+</html>

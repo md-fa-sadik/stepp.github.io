@@ -1,0 +1,18 @@
+@mixin flexCenter($dir) {
+  flex-direction: $dir;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin glass {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px outset rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.2);
+}
+@mixin fontAwesome {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+}

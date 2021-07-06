@@ -1,0 +1,77 @@
+.hero {
+  position: relative;
+  .ball {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $primary;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .ball1 {
+    left: 80%;
+    background-color: $secondary;
+    animation: random4 20s linear infinite alternate;
+  }
+  .ball2 {
+    top: 30%;
+    left: 40%;
+    background-color: $secondary;
+    animation: random2 20s linear infinite alternate;
+  }
+  .ball3 {
+    top: 40%;
+    left: 60%;
+    animation: random3 20s linear infinite alternate;
+  }
+  .ball4 {
+    left: 20%;
+    background-color: $accent;
+    animation: random1 20s linear infinite alternate;
+  }
+  .ball5 {
+    left: 10%;
+    top: 30%;
+    animation: random4 20s linear infinite alternate;
+  }
+  .ball6 {
+    top: 25%;
+    left: 90%;
+    background-color: $secondary;
+    animation: random3 20s linear infinite alternate;
+  }
+  .ball7 {
+    left: 55%;
+    top: 33%;
+    background-color: $accent;
+    animation: random4 20s linear infinite alternate;
+  }
+  .ball8 {
+    top: 70%;
+    left: 85%;
+    animation: random1 20s linear infinite alternate;
+  }
+}
+@keyframes random1 {
+  to {
+    transform: translate3d(-200px, -100px, 0);
+  }
+}
+@keyframes random2 {
+  to {
+    transform: translate3d(-200px, -100px, 0);
+  }
+}
+@keyframes random3 {
+  to {
+    transform: translate3d(300px, 100px, 0);
+  }
+}
+@keyframes random4 {
+  to {
+    transform: translate3d(100px, 100px, 0);
+  }
+}

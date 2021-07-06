@@ -1,0 +1,21 @@
+/* navbar background on scroll */
+.navGlass {
+  @include glass;
+}
+
+/* mobile nav link active state */
+
+.mobileNavLinkActive {
+  background-color: $light !important;
+  color: $dark !important;
+  &::after {
+    color: $dark !important;
+  }
+}
+/* accordion active state */
+.accordionActive {
+  @extend .mobileNavLinkActive;
+  &::after {
+    transform: rotateZ(45deg) !important;
+  }
+}

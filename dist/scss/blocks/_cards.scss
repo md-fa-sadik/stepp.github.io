@@ -1,0 +1,36 @@
+.cards {
+  .col-xl {
+    border-radius: 20px !important;
+    cursor: pointer;
+    border: 1px solid rgba($color: $secondary, $alpha: 0.8);
+    transition: 0.3s;
+    i {
+      color: $dark;
+      background-color: rgba($color: $secondary, $alpha: 0.4);
+      border-radius: 50%;
+    }
+    h5 {
+      color: $dark;
+    }
+    p {
+      color: $disable;
+    }
+    &:hover {
+      background-color: $primary;
+      border: 1px solid transparent;
+      color: $white;
+      transform: translateY(-20px) !important;
+      box-shadow: 0 20px 30px rgba($color: #000000, $alpha: 0.3);
+      p {
+        color: lighten($color: $disable, $amount: 40%);
+      }
+      i {
+        color: $white;
+        background-color: rgba($color: $secondary, $alpha: 1);
+      }
+      h5 {
+        color: $white;
+      }
+    }
+  }
+}

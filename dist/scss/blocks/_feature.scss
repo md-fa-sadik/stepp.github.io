@@ -1,0 +1,41 @@
+.feature {
+  h4,
+  h6,
+  a {
+    text-transform: capitalize;
+  }
+  .row {
+    margin: 1em 0;
+  }
+  .feature-content,
+  .feature-image,
+  .feature-image img {
+    border-radius: 30px !important;
+  }
+  .feature-image {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  .feature-content {
+    background-color: rgba($color: $secondary, $alpha: 0.3);
+    &:nth-child(2n + 1) {
+      background-color: rgba($color: $primary, $alpha: 0.3);
+    }
+    display: flex;
+    flex-direction: column;
+    a {
+      &:hover {
+        color: $disable;
+        &::after {
+          margin: 0 1em;
+        }
+      }
+      color: $accent;
+      &::after {
+        content: "\f30b";
+        @include fontAwesome;
+        margin: 0.5em;
+        transition: 0.3s;
+      }
+    }
+  }
+}
